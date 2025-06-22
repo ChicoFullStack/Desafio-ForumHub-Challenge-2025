@@ -4,13 +4,17 @@ import com.alura.forumhub.Forumhub.domain.resposta.Resposta;
 import com.alura.forumhub.Forumhub.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.Collection;
 import java.util.List;
 
 @Table(name = "usuarios")
 @Entity(name = "Usuario")
 @EqualsAndHashCode(of = "id")
-public class Usuario implements UserDetails{
+public class Usuario implements UserDetails {
 
     /**
      *

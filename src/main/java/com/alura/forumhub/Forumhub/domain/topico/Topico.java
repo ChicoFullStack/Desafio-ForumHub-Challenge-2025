@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "Topico")
-@Table(name = "topicos")
+@Table(name = "topico")
 @EqualsAndHashCode(of = "id")
 public class Topico {
 
